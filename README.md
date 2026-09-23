@@ -10,6 +10,8 @@ Dev Stack is a modern and responsive web platform designed for developers to man
 - **React.js**
 - **JavaScript (ES6+)**
 - **Tailwind CSS**
+- **TypeScript**
+- **Vite**
 - **HTML5 & CSS3**
 
 ## ✨ Key Features
