@@ -64,7 +64,7 @@ const TechnologyStack = ( { stackItems, setStackItems }: TechnologyStackProps ) 
             </button>
           </div>
       </div>}
-      {/* Empty Stack Box */}
+      {/* Empty Stack Box --*/}
       
     </div>
   )
