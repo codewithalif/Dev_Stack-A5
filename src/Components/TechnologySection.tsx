@@ -1,47 +1,47 @@
-// import { use, useState } from "react"
-// import type { ITechItem } from "../Type/TechItem"
-// import TechnologyCards from "./TechnologyCard";
-// import TechnologyStack from "./TechnologyStack";
+import { use, useState } from "react"
+import type { ITechItem } from "../Type/TechItem"
+import TechnologyCards from "./TechnologyCard";
+import TechnologyStack from "./TechnologyStack";
 
-// interface TechnologySectionProps {
-//     techPromise: Promise<ITechItem[]>;
-// }
+interface TechnologySectionProps {
+    techPromise: Promise<ITechItem[]>;
+}
 
-// const TechnologySection = ({ techPromise }: TechnologySectionProps) => {
+const TechnologySection = ({ techPromise }: TechnologySectionProps) => {
     
-//     const techData = use(techPromise)
+    const techData = use(techPromise)
 
-//     const [stackItems, setStackItems] = useState<ITechItem[]>([])
+    const [stackItems, setStackItems] = useState<ITechItem[]>([])
     
 
 
-//   return (
-//     <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-20  '>
+  return (
+    <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-20  '>
 
         
-//         {/* Technology Cards header */}
-//         <div>
-//             <h1 className='text-2xl md:text-3xl font-bold text-gray-900'>Explore the <span className='bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent'>Technologies</span></h1>
-//             <p className='text-gray-600 mt-4 text-sm md:text-base'>Pick one technology per category to build your ideal stack.</p>
-//         </div>
+        {/* Technology Cards header */}
+        <div>
+            <h1 className='text-2xl md:text-3xl font-bold text-gray-900'>Explore the <span className='bg-gradient-to-r from-fuchsia-600 to-pink-600 bg-clip-text text-transparent'>Technologies</span></h1>
+            <p className='text-gray-600 mt-4 text-sm md:text-base'>Pick one technology per category to build your ideal stack.</p>
+        </div>
 
 
-//         {/* Technology section */}
-//         <div className='grid md:grid-cols-12 gap-4 mt-8 justify-center '>
-//             {/* Technology cards */}
-//             <div className="col-span-12 md:col-span-9">
-//                 <TechnologyCards techData={techData} stackItems={stackItems} setStackItems={setStackItems} />
-//             </div>
-//             {/* Technology Stack */}
-//             <div className="col-span-12 md:col-span-3">
-//                 <TechnologyStack stackItems={stackItems} setStackItems={setStackItems} />
-//             </div>
-//         </div>
+        {/* Technology section */}
+        <div className='grid md:grid-cols-12 gap-4 mt-8 justify-center '>
+            {/* Technology cards */}
+            <div className="col-span-12 md:col-span-9">
+                <TechnologyCards techData={techData} stackItems={stackItems} setStackItems={setStackItems} />
+            </div>
+            {/* Technology Stack */}
+            <div className="col-span-12 md:col-span-3">
+                <TechnologyStack stackItems={stackItems} setStackItems={setStackItems} />
+            </div>
+        </div>
 
 
 
-//       </div>  
-//     )
-// }
+      </div>  
+    )
+}
 
-// export default TechnologySection
+export default TechnologySection
