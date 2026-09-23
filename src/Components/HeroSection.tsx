@@ -14,9 +14,9 @@ const HeroSection = () => {
                     {/* Button */}
                     <div className="flex items-center gap-4">
                         
-                        {/* <button className="px-3 py-2 md:px-6 md:py-3 rounded-xl bg-gradient-to-r from-red-500 to-indigo-200 font-semibold text-sm shadow-sm hover:opacity-95 transition-opacity cursor-pointer">
+                        <button className="px-3 py-2 md:px-6 md:py-3 rounded-xl bg-gradient-to-r from-red-500 to-indigo-200 font-semibold text-sm shadow-sm hover:opacity-95 transition-opacity cursor-pointer">
                             Explore Technologies
-                        </button> */}
+                        </button>
 
                         
                         <button className="px-3 py-2 md:px-6 md:py-3 rounded-xl border border-gray-200 bg-white text-slate-600 font-medium text-sm hover:bg-gray-50 transition-colors cursor-pointer hover:shadow-md">
